@@ -4,7 +4,7 @@ const { TextDecoder } = require('util');
 const logcb= (...args)=>console.log.bind(this,...args);
 const errcb= (...args)=>console.error.bind(this,...args);
 
-const uuid= (process.env.UUID||'8786d7db-b74f-41c5-b283-f7628378003c').replace(/-/g, "");
+const uuid= (process.env.UUID||'41067dc6-a1f0-43db-b7c2-6e0069db3d06').replace(/-/g, "");
 const port= process.env.PORT||3000;
 
 const wss=new WebSocket.Server({port},logcb('listen:', port));
