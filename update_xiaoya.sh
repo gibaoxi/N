@@ -1,7 +1,7 @@
-BASE_DIR=/etc/xiaoya
-PORT1=43645
-PORT2=43646
-PORT3=43647
+﻿BASE_DIR=/etc/xiaoya
+PORT1=57860
+PORT2=57861
+PORT3=57862
 TAG="latest"
 MEM_OPT="-Xmx512M"
 MOUNT=""
@@ -9,8 +9,8 @@ MOUNT=""
 usage(){
   echo "Usage: $0 [ -d BASE_DIR ] [ -p PORT1 ] [ -P PORT2 ] [ -t TAG ] [ -v MOUNT ] [ -m MEM_OPT ]"
   echo "-d BASE_DIR    数据目录，默认：/etc/xiaoya"
-  echo "-p PORT1       管理界面端口，默认：43645"
-  echo "-P PORT2       小雅AList端口，默认：43646"
+  echo "-p PORT1       管理界面端口，默认：4567"
+  echo "-P PORT2       小雅AList端口，默认：5344"
   echo "-t TAG         Docker镜像标签，默认：latest"
   echo "-v Host:Docker 路径挂载"
   echo "-m MEM_OPT     Java最大堆内存，默认：512M"
