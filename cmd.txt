@@ -1,1 +1,1 @@
-./CloudflareST -url -url https://download-proxy.zhaofengying.com/api/download?url=https://testfileorg.netwet.net/500MB-CZIPtestfile.org.zip -sl 7 -tl 80 -dn 4 -p 4 -f 3ip.txt -tp 443 -dt 5 -tlr 0 -n 100
+./CloudflareST -url https://download-proxy.zhaofengying.com/api/download?url=https://testfileorg.netwet.net/500MB-CZIPtestfile.org.zip -sl 7 -tl 80 -dn 4 -p 4 -f 3ip.txt -tp 443 -dt 5 -tlr 0 -n 100
