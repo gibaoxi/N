@@ -53,16 +53,16 @@ elif ! command -v systemctl >/dev/null 2>&1; then
   exit 1
 else
   if command -v netstat >/dev/null 2>&1; then
-    check_port=$(netstat -lnp | grep 29849 | awk '{print $7}' | awk -F/ '{print $1}')
+    check_port=$(netstat -lnp | grep 43610 | awk '{print $7}' | awk -F/ '{print $1}')
   else
     echo -e "${GREEN_COLOR}端口检查 ...${RES}"
     if command -v yum >/dev/null 2>&1; then
       yum install net-tools -y >/dev/null 2>&1
-      check_port=$(netstat -lnp | grep 29849 | awk '{print $7}' | awk -F/ '{print $1}')
+      check_port=$(netstat -lnp | grep 43610 | awk '{print $7}' | awk -F/ '{print $1}')
     else
       apt-get update >/dev/null 2>&1
       apt-get install net-tools -y >/dev/null 2>&1
-      check_port=$(netstat -lnp | grep 29849 | awk '{print $7}' | awk -F/ '{print $1}')
+      check_port=$(netstat -lnp | grep 43610 | awk '{print $7}' | awk -F/ '{print $1}')
     fi
   fi
 fi
